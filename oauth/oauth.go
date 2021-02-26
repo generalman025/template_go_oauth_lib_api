@@ -6,8 +6,9 @@ import (
 	"net/http"
 	"strconv"
 	"strings"
-	"template_go_oauth_lib_api/oauth/errors"
 	"time"
+
+	"github.com/generalman025/template_go_oauth_lib_api/oauth/errors"
 
 	"github.com/mercadolibre/golang-restclient/rest"
 )
