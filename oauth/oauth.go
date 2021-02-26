@@ -1,4 +1,4 @@
-package oath
+package oauth
 
 import (
 	"encoding/json"
@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strconv"
 	"strings"
-	"template_go_oauth_lib_api/oath/errors"
+	"template_go_oauth_lib_api/oauth/errors"
 	"time"
 
 	"github.com/mercadolibre/golang-restclient/rest"
