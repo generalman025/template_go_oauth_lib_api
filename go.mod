@@ -1,4 +1,4 @@
-module template_go_oauth_lib_api
+module github.com/generalman025/template_go_oauth_lib_api
 
 go 1.15
 
