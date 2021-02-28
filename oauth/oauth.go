@@ -12,6 +12,7 @@ import (
 )
 
 const (
+	baseURL          = "http://localhost:8080"
 	headerXPublic    = "X-Public"
 	headerXClientId  = "X-Client-Id"
 	headerXCallerId  = "X-Caller-Id"
@@ -110,7 +111,7 @@ func cleanRequest(request *http.Request) {
 }
 
 func getAccessToken(accessTokenId string) (*accessToken, rest_errors.RestErr) {
-	response, _ := oauthRestClient.Get(fmt.Sprintf("/oauth/access_token/%s", accessTokenId))
+	response, _ := oauthRestClient.Get(fmt.Sprintf("%s/oauth/access_token/%s", baseURL, accessTokenId))
 	if response == nil {
 		return nil, rest_errors.NewInternalServerError("invalid resclient response when trying to get access token", rest_errors.NewError("error when trying to get access token"))
 	}
