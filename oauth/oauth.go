@@ -12,7 +12,8 @@ import (
 )
 
 const (
-	baseURL          = "http://localhost:8080"
+	// baseURL          = "http://localhost:8080" // for localhost
+	baseURL          = "http://host.docker.internal:8080" // for docker
 	headerXPublic    = "X-Public"
 	headerXClientId  = "X-Client-Id"
 	headerXCallerId  = "X-Caller-Id"
